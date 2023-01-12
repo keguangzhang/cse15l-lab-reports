@@ -1,6 +1,6 @@
-#CSE 15L/n
-*cse 15L*/n
-**BOLD**/n
+#CSE 15L\n
+*cse 15L*\n
+**BOLD**\n
 - thursday
 1. Monday
 2. Tuesday
