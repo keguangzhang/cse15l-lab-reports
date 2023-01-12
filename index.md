@@ -1,6 +1,9 @@
-#CSE 15L\n
-*cse 15L*\n
-**BOLD**\n
+#CSE 15L
+
+*cse 15L*
+
+**BOLD**
+
 - thursday
 1. Monday
 2. Tuesday
