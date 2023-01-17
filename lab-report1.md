@@ -1,7 +1,8 @@
 # How to Log into a Course-specific Account on ieng6?
 
-**Part 1: Installing VScode**\
-- I went to the Visual Studio Code website [Link](https://code.visualstudio.com) and downloaded it to my computer.
+**Part 1: Installing VScode**
+- I went to the Visual Studio Code website([Link](https://code.visualstudio.com)), and downloaded it to my computer.
+- Open the downloaded Visual Studio Code, and you should see this:
 ![Image](lab1 vscode.png)
 
 **Part 2: Remotely Connecting**
