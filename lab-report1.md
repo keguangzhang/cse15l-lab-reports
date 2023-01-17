@@ -6,12 +6,14 @@
 
 ![Image](lab1 vscode.png)
 
+
 **Part 2: Remotely Connecting**
 - Opened a terminal on VScode and type the command line:$ ssh UserNameofCourseSpecificAccount@ieng6.ucsd.edu
 - It asked for the password of my account. Typed in the password, and I successfully connected to the remote server. The whole process looks like this:
 
 ![Image](lab1 connecting.png)
 - To log out of the remote server, type in the command $ exit
+
 
 **Part 3: Trying Some Commands**
 - I tried some commands while logged in the remote server:
