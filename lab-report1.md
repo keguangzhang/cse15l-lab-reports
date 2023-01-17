@@ -19,6 +19,7 @@
 - I tried some commands while logged in the remote server:
 
 ![Image](lab 1 command1.png)
+
 - I also tried some commands after logging out of the remote server:
 
 ![Image](lab 1 command2.png)
