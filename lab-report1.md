@@ -14,6 +14,9 @@
 - To log out of the remote server, type in the command $ exit
 
 **Part 3: Trying Some Commands**
-- I tried some commands while logged in the remote server
-![Image](lab1 command1.png)
-![Image](lab1 command2.png)
+- I tried some commands while logged in the remote server:
+
+![Image](lab 1 command1.png)
+- I also tried some commands after logging out of the remote server:
+
+![Image](lab 1 command2.png)
