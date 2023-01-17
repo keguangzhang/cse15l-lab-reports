@@ -2,11 +2,14 @@
 
 **Part 1: Installing VScode**
 - I went to the Visual Studio Code website([Link](https://code.visualstudio.com)), and downloaded it to my computer.
-- Open the downloaded Visual Studio Code, and you should see this:
+- Opened the downloaded Visual Studio Code, and I saw this:
 
 ![Image](lab1 vscode.png)
 
 **Part 2: Remotely Connecting**
+- Opened a terminal on VScode and type the command line:$ ssh UserNameofCourseSpecificAccount@ieng6.ucsd.edu
+- It asked for the password of my account. Typed in the password, and I successfully connected to the remote server. The whole process looks like this:
+
 ![Image](lab1 connecting.png)
 
 **Part 3: Trying Some Commands**
