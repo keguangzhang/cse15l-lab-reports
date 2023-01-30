@@ -20,8 +20,8 @@ class Handler {
 class StringServer {
     public static void main(String[] args) {
         Handler request = new Handler();
-
-        request.handleRequest("/add-message?s=Hello");
+        URI url = new URI(":/add-message?s=Hello");
+        request.handleRequest(url);
     }
 
 }
