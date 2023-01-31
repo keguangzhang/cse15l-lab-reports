@@ -47,4 +47,8 @@ Here is my code:
 Note: The interface URLHandler is already impemented in the wavelet repository that we were asked to forked in lab 2. The code of the class StringServer is copied from the class NumberServer in the wavelet repository.
   
   
-
+I started the server, and I first tried to let the string "Hello" be displayed on the page:
+![Image] ()
+  
+I then changed the string into "how are you", and both "Hello" and "how are you" were displayed on the page:
+![Image] ()
