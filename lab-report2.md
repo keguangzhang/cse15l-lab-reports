@@ -72,6 +72,7 @@ We encountered many bugs in lab 3, and one of them was this reversed method that
               
                                     
 I implemented a JUnit test with failure inducing input:
+
 @Test
 public void testReversed2() {
     int[] input = {1, 2, 3, 4, 5, 6, 7};
@@ -79,13 +80,16 @@ public void testReversed2() {
             ArrayExamples.reversed(input));
 }
                                     
+                                    
 Here is a JUnit test  with input that does not induce a failure:
+                                    
 @Test
 public void testReversed3() {
     int[] input = {0};
     assertArrayEquals(new int[] {0}, 
             ArrayExamples.reversed(input));
 }
+                                    
 
 Here is the symptom from running the JUit tests above:
 ![Image] (unittest.png)
