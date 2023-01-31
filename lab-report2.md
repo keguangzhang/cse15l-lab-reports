@@ -48,7 +48,7 @@ Note: The interface URLHandler is already impemented in the wavelet repository t
   
   
 I started the server, and I first tried to let the string "Hello" be displayed on the page:
-![Image] ()
+![Image] (hello.png)
   
 I then changed the string into "how are you", and both "Hello" and "how are you" were displayed on the page:
-![Image] ()
+![Image] (how are you.png)
