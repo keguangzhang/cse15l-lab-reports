@@ -87,7 +87,7 @@ Here is a JUnit test  with input that does not induce a failure:
 
 Here is the symptom from running the JUit tests above:
 
-  ![Image] (unittest.png)
+  ![Image](unittest.png)
   
 Before correction, the buggy code looked like this:
  
