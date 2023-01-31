@@ -3,7 +3,7 @@
 **Part 1: Web Server**
 
 I created a web server that can take in a request of string and show the string along with the previous strings on the web pages.
-The requests look like this: /add-message?s=<string>, and the string will be displayed on the web pages.
+The requests look like this: /add-message?s=(string), and the string will be displayed on the web pages.
 
 Here is my code:
   
