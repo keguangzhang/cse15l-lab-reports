@@ -63,22 +63,22 @@ We encountered many bugs in lab 3, and one of them was this reversed method that
 
 I implemented a JUnit test with failure inducing input:
 
-@Test
-public void testReversed2() {
-    int[] input = {1, 2, 3, 4, 5, 6, 7};
-    assertArrayEquals(new int[] {7, 6, 5, 4, 3, 2, 1}, 
-            ArrayExamples.reversed(input));
-}
+    @Test
+    public void testReversed2() {
+        int[] input = {1, 2, 3, 4, 5, 6, 7};
+        assertArrayEquals(new int[] {7, 6, 5, 4, 3, 2, 1}, 
+                ArrayExamples.reversed(input));
+    }
                                     
                                     
 Here is a JUnit test  with input that does not induce a failure:
                                     
-@Test
-public void testReversed3() {
-    int[] input = {0};
-    assertArrayEquals(new int[] {0}, 
-            ArrayExamples.reversed(input));
-}
+    @Test
+    public void testReversed3() {
+        int[] input = {0};
+        assertArrayEquals(new int[] {0}, 
+                ArrayExamples.reversed(input));
+    }
                                     
 
 Here is the symptom from running the JUit tests above:
@@ -86,20 +86,20 @@ Here is the symptom from running the JUit tests above:
   
 Before correction, the buggy code looked like this:
  
-  static int[] reversed(int[] arr) {
-      int[] newArray = new int[arr.length];
-      for(int i = 0; i < arr.length; i += 1) {
-          arr[i] = newArray[arr.length - i - 1];
-      }
-      return arr;
-  }
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = newArray[arr.length - i - 1];
+        }
+        return arr;
+    }
 
 After coreection, the code looked like this:
       
- static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-        newArray[i] = arr[arr.length - i - 1];
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            newArray[i] = arr[arr.length - i - 1];
+        }
+        return newArray;
     }
-    return newArray;
- }
