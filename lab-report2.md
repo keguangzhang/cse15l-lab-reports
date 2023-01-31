@@ -86,6 +86,7 @@ Here is a JUnit test  with input that does not induce a failure:
                                     
 
 Here is the symptom from running the JUit tests above:
+In both cases, the result was an array with elements that were all zero.
 
   ![Image](unittest.png)
   
