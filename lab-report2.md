@@ -1,9 +1,9 @@
 # Lab Report 2: Web Server and Debugging
 
-**Part 1: Web Server
+**Part 1: Web Server**
 
 I created a web server that can take in a request of string and show the string along with the previous strings on the web pages.
-The requests look like this: /add-message?s=<string>, and the <string> will be displayed on the web pages.
+The requests look like this: /add-message?s=(string), and the string will be displayed on the web pages.
 
 Here is my code:
   
@@ -62,7 +62,7 @@ To display the string, the handleRequest and the main method in the NumberServer
 For the handleRequest method, the relevant argument is url which holds the value of http://localhost:4025/add-message?s=How%20are%20you (I typed in http://localhost:4025/add-message?s=How are you) . For the main method the relevant argument is the port number which is still 4025 in this case.
   
   
-**Part 2: Debugging
+**Part 2: Debugging**
 We encountered many bugs in lab 3, and one of them was this reversed method that tried to return a new array that has all the elements in the parameter in reversed orded.
 
 I implemented a JUnit test with failure inducing input:
@@ -112,5 +112,5 @@ After coreection, the code looked like this:
   
 The issue of the original was that it was assigning the elements in the newArray, which are all zero, to the array arr, which made arr becomes all zero. The method then return arr, which is an array of zero. By assigning the element in arr to the newArray in a reserved order, and then return the new array, this issue can be solved.
   
-**Part 3: Reflection
+**Part 3: Reflection**
 My biggest takeaway from lab 2 & 3 is that I learned how to start a web server and manipulate the content being displayed by writing codes that can take in requests of changing the url. I also learned how to write good tests that contains failure inducing inputs and become more proactive of thinking about extreme cases that can break the code.
