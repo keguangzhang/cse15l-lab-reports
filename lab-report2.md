@@ -7,53 +7,57 @@ The requests look like this: /add-message?s=<string>, and the <string> will be d
 
 Here is my code:
   
-  import java.io.IOException;
-  import java.net.URI;
+    import java.io.IOException;
+    import java.net.URI;
   
-  class Handler implements URLHandler{
-      String previousMessage = "";
+    class Handler implements URLHandler{
+        String previousMessage = "";
   
-      public String handleRequest(URI url) {
+        public String handleRequest(URI url) {
     
-          if (url.getPath().contains("/add-message")) {
-              String []strings = url.getQuery().split("=");
-              if (strings[0].equals("s")) {
-                  String message = strings[1] + "\n";
-                  this.previousMessage = previousMessage.concat(message);
-                  return previousMessage;
-              }
+            if (url.getPath().contains("/add-message")) {
+                String []strings = url.getQuery().split("=");
+                if (strings[0].equals("s")) {
+                    String message = strings[1] + "\n";
+                    this.previousMessage = previousMessage.concat(message);
+                    return previousMessage;
+                }
             
-          }
-          return "404 Not Found!";
-      }
-  }
+            }
+            return "404 Not Found!";
+        }
+    }
   
-  class StringServer {
+    class StringServer {
       
-      public static void main(String[] args) throws IOException {
+        public static void main(String[] args) throws IOException {
           
-          if(args.length == 0){
-              System.out.println("Missing port number! Try any number between 1024 to 49151");
-              return;
-          }
+            if(args.length == 0){
+                System.out.println("Missing port number! Try any number between 1024 to 49151");
+                return;
+            }
 
-          int port = Integer.parseInt(args[0]);
-
-          Server.start(port, new Handler());
-      }
-  }
+            int port = Integer.parseInt(args[0]);
+  
+            Server.start(port, new Handler());
+        }
+    }
   
   
 Notes: The interface URLHandler is already impemented in the wavelet repository that we were asked to forked in lab 2. The code of the class StringServer is copied from the class NumberServer in the wavelet repository.
   
   
 I started the server, and I first tried to let the string "Hello" be displayed on the page:
-![Image](hello.png)
+
+  ![Image](hello.png)
+  
 To display the string, the handleRequest and the main method in the NumberServer class were called.
 For the handleRequest method, the relevant argument is url which holds the value of http://localhost:4025/add-message?s=Hello. For the main method the relevant argument is the port number which is 4025 in this case.
   
 I then changed the string into "how are you", and both "Hello" and "how are you" were displayed on the page:
-![Image](how are you.png)
+
+  ![Image](how are you.png)
+  
 To display the string, the handleRequest and the main method in the NumberServer class were called.
 For the handleRequest method, the relevant argument is url which holds the value of http://localhost:4025/add-message?s=How%20are%20you (I typed in http://localhost:4025/add-message?s=How are you) . For the main method the relevant argument is the port number which is still 4025 in this case.
   
@@ -82,7 +86,8 @@ Here is a JUnit test  with input that does not induce a failure:
                                     
 
 Here is the symptom from running the JUit tests above:
-![Image] (unittest.png)
+
+  ![Image] (unittest.png)
   
 Before correction, the buggy code looked like this:
  
