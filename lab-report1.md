@@ -18,7 +18,7 @@ Notice that to log out of the remote server, I typed in the command $ exit
 **Part 3: Trying Some Commands**\
 I tried some commands while logged in the remote server:
 - "cd" changed directory.
-- "cd ~" the "~" symbol represented home directory, so the whole command line changed the current directory to home diretory.
+- "cd ~": this "~" symbol represented home directory, so the whole command line changed the current directory to home diretory.
 - "ls -lat" listed all the contents of the directory I was at, which showed that I have 128 in total.
 - "cp /home/Linux/ieng6/cs15lwi23/public/hello.txt ~/" changed the directory to the file called hello.txt.
 - "cat /home/Linux/ieng6/cs15lwi23/public/hello.txt ~/" printed out the content in the file hello.txt.
