@@ -29,7 +29,9 @@ Here is my code:
   }
   
   class StringServer {
+      
       public static void main(String[] args) throws IOException {
+          
           if(args.length == 0){
               System.out.println("Missing port number! Try any number between 1024 to 49151");
               return;
@@ -39,7 +41,7 @@ Here is my code:
 
           Server.start(port, new Handler());
       }
- }
+  }
   
   
 Note: The interface URLHandler is already impemented in the wavelet repository that we were asked to forked in lab 2. The code of the class StringServer is copied from the class NumberServer in the wavelet repository.
