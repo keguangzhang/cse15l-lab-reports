@@ -103,3 +103,8 @@ After coreection, the code looked like this:
         }
         return newArray;
     }
+  
+  
+The issue of the original was that it was assigning the elements in the newArray, which are all zero, to the array arr, which made arr becomes all zero. The method then return arr, which is an array of zero. By assigning the element in arr to the newArray in a reserved order, and then return the new array, this issue can be solved.
+  
+**Part 3: Reflection
