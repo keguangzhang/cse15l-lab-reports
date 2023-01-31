@@ -1,26 +1,26 @@
-import java.net.URI;
+interface URLHandler {
+    String handleRequest(URI url);
+}
 
-
-class Handler {
-    public void handleRequest(URI url) {
+class Handler implements URLHandler{
+    public String handleRequest(URI url) {
         if (url.getPath().contains("/add-message")) {
-            String[] strings = url.getQuery().split("=");
-            /* 
+            String[] strings = new String[2];
+            strings = url.getQuery().split("=");
             String stringToReturn = strings[1];
-            return stringToReturn;
-            */
-            for (int i = 0; i < strings.length; i++) {
-                System.out.println(strings[i]);
+            return String.valueOf(stringToReturn);
+            
+           
             }
         }
             
     }
-}
+
 
 class StringServer {
     public static void main(String[] args) {
         Handler request = new Handler();
-        URI url = new URI(":/add-message?s=Hello");
+        URI url = new URI("http://localhost:4000/add-message?s=Hello");
         request.handleRequest(url);
     }
 
