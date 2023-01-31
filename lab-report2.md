@@ -59,18 +59,8 @@ For the handleRequest method, the relevant argument is url which holds the value
   
   
 **Part 2: Debugging
-We encountered many bugs in lab 3, and one of them was this reversed method that tried to return a new array that has all the elements in the parameter in reversed order:
+We encountered many bugs in lab 3, and one of them was this reversed method that tried to return a new array that has all the elements in the parameter in reversed orded.
 
-  static int[] reversed(int[] arr) {
-      int[] newArray = new int[arr.length];
-      for(int i = 0; i < arr.length; i += 1) {
-        arr[i] = newArray[arr.length - i - 1];
-      }
-      return arr;
-  }
-
-              
-                                    
 I implemented a JUnit test with failure inducing input:
 
 @Test
@@ -93,3 +83,23 @@ public void testReversed3() {
 
 Here is the symptom from running the JUit tests above:
 ![Image] (unittest.png)
+  
+Before correction, the buggy code looked like this:
+ 
+  static int[] reversed(int[] arr) {
+      int[] newArray = new int[arr.length];
+      for(int i = 0; i < arr.length; i += 1) {
+          arr[i] = newArray[arr.length - i - 1];
+      }
+      return arr;
+  }
+
+After coreection, the code looked like this:
+      
+ static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+        newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+ }
