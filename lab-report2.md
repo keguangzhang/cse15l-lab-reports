@@ -63,6 +63,7 @@ For the handleRequest method, the relevant argument is url which holds the value
   
   
 **Part 2: Debugging**
+
 We encountered many bugs in lab 3, and one of them was this reversed method that tried to return a new array that has all the elements in the parameter in reversed orded.
 
 I implemented a JUnit test with failure inducing input:
@@ -100,7 +101,7 @@ Before correction, the buggy code looked like this:
         return arr;
     }
 
-After coreection, the code looked like this:
+After correction, the code looked like this:
       
     static int[] reversed(int[] arr) {
         int[] newArray = new int[arr.length];
@@ -114,4 +115,5 @@ After coreection, the code looked like this:
 The issue of the original was that it was assigning the elements in the newArray, which are all zero, to the array arr, which made arr becomes all zero. The method then return arr, which is an array of zero. By assigning the element in arr to the newArray in a reserved order, and then return the new array, this issue can be solved.
   
 **Part 3: Reflection**
+
 My biggest takeaway from lab 2 & 3 is that I learned how to start a web server and manipulate the content being displayed by writing codes that can take in requests of changing the url. I also learned how to write good tests that contains failure inducing inputs and become more proactive of thinking about extreme cases that can break the code.
