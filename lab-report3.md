@@ -28,7 +28,7 @@ bash-3.2$ grep -c "is" */*/*/*/ch14.txt
 I used grep -c command and the "*/*/*/*/ch14.txt" is the pattern of the path of the file inside written_2. It returns 58, which means that "is" appears in 58 lines of the file.
   
 
-** grep -l**
+** grep -l**\
 This command-line option displays the name of the files that contains the given string when multiple files is provided while using grep command.
 Example 1:
 
