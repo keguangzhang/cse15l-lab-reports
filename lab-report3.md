@@ -62,5 +62,5 @@ written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
 written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 ```
-
+I used grep -l and enter "Bahamas" as the string to look for, and */*/*/* and */*/*/*/* are the pattern for all files in written_2. It displays the directories that contains the string first, and then it displays all the names of files that contain the string.
 
