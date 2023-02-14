@@ -2,12 +2,11 @@
 
 I chose to do web search on the options on command grep. 
 The syntax for grep command is grep <pattern/string> <file>, and this command displays all the lines that contain the given pattern or string.
-The command-line options I found were -c, -l, -w, and -R
+The command-line options I found were -c, -l, -w, and -R.
 
 
 **grep -c**\
 grep -c command prints the count of lines that contains the string or pattern that match the given string or pattern.
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/\
 
 Example 1:\
 I want to find the number of text file in written_2 which is inside the repository dosearch that I have cloned during the lab. 
@@ -107,3 +106,5 @@ bash-3.2$ grep -R "Kitano Temmangu shrine" written_2
 written_2/travel_guides/berlitz1/WhatToJapan.txt:        each month) and at Kitano Temmangu shrine (25th), but there are many
 ```
 The command takes in the given string and compares it to all the text of the files in written_2. It returns the name of the file and a part of the text that includes the string.
+  
+**Citation:** All the information was found in this website (https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
