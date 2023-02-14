@@ -101,4 +101,9 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothere
 I used grep -R and I directly type written_2 and it look for the string in every file in this directory so that I don't have to try out with every single file name.
   
 Example 2:
-
+I want to find out which file in written_2 contains the string "Kitano Temmangu shrine":
+```
+bash-3.2$ grep -R "Kitano Temmangu shrine" written_2
+written_2/travel_guides/berlitz1/WhatToJapan.txt:        each month) and at Kitano Temmangu shrine (25th), but there are many
+```
+The command takes in the given string and compares it to all the text of the files in written_2. It returns the name of the file and a part of the text that includes the string.
