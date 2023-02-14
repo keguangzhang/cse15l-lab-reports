@@ -69,11 +69,13 @@ I used grep -l and enter "Bahamas" as the string to look for, and */*/*/* and */
 The grep command takes in the string and looks for all words that are either the string itself or contain the given string as a substring. This can be a problem when we want to find a certain word. For example, if I want to look for the word "an", the grep command will not only look for "an" but also words like "Canadian", "Indian", and "antibody", etc because these words contain the substring "an". The command-line option -w can solve this problem because it only matches the string as a whole word.
 
 Example 1:
-I want to know how many lines in ch14.txt contain the word "an".
+I want to know how many lines in ch14.txt contain the word "an":
 ```
 bash-3.2$ grep -w -c "an" */*/*/*/ch14.txt
 15
 bash-3.2$ grep -c "an" */*/*/*/ch14.txt
 63
 ```
-
+I first used grep -w -c. -w searches "an" as a whole word, and -c counts the number of lines. This command gives the number 15, which means that in this file, there are 15 lines that contain "an" as a word. I then tried grep with only -c, and this displays 63, which is a number larger than 15. This means that the grep command without -w had counted every word that consists of "an" but not only "an" as a single word.
+  
+Example 2:
