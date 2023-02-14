@@ -30,6 +30,22 @@ I used grep -c command and the "*/*/*/*/ch14.txt" is the pattern of the path of 
 
 **grep -l**\
 This command-line option displays the name of the files that contains the given string when multiple files is provided while using grep command.
+
 Example 1:
+I want to find which files in berlitz2 contains the string "Beijing":
+```
+bash-3.2$ grep -l "Beijing" */*/berlitz2/*
+written_2/travel_guides/berlitz2/Beijing-History.txt
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhatToDo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+```
+I used grep -l and entered "Beijing" as the string to look for. */*/berlitz2/* tells it to look for all the file inside berlitz2. This command displays the name of 7 files that contain the string "Beijing".
+  
+Example 2:
+
 
 
