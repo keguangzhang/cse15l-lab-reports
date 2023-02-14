@@ -2,7 +2,7 @@
 
 I chose to do web search on the options on command grep. 
 The syntax for grep command is grep <pattern/string> <file>, and this command displays all the lines that contain the given pattern or string.
-The command-line options I found were -c, 
+The command-line options I found were -c, -l,
 
 
 **grep -c**\
@@ -46,6 +46,21 @@ written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
 I used grep -l and entered "Beijing" as the string to look for. */*/berlitz2/* tells it to look for all the file inside berlitz2. This command displays the name of 7 files that contain the string "Beijing".
   
 Example 2:
-
+I want to find the files in written_2 that contains the string "Bahamas":
+```
+bash-3.2$ grep -l "Bahamas" */*/*/* */*/*/*/*
+grep: written_2/non-fiction/OUP/Abernathy: Is a directory
+grep: written_2/non-fiction/OUP/Berk: Is a directory
+grep: written_2/non-fiction/OUP/Castro: Is a directory
+grep: written_2/non-fiction/OUP/Fletcher: Is a directory
+grep: written_2/non-fiction/OUP/Kauffman: Is a directory
+grep: written_2/non-fiction/OUP/Rybczynski: Is a directory
+written_2/travel_guides/berlitz1/WhatToFWI.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+```
 
 
