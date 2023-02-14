@@ -16,3 +16,7 @@ bash-3.2$ find written_2 > result.txt
 bash-3.2$ grep -c ".txt" result.txt
 224
 ```
+I first used find command to find all the files and directories inside written_2 and stored it in a file called result.txt. I then use grep -c to find the count of lines that contain ".txt" in result.txt, and this gives me the number if text files.
+  
+Example 2:\
+
