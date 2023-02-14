@@ -65,7 +65,11 @@ written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 I used grep -l and enter "Bahamas" as the string to look for, and */*/*/* and */*/*/*/* are the pattern for all files in written_2. It displays the directories that contains the string first, and then it displays all the names of files that contain the string.
   
   
-**grep -w**
+**grep -w**\
+The grep command takes in the string and looks for all words that are either the string itself or contain the given string as a substring. This can be a problem when we want to find a certain word. For example, if I want to look for the word "an", the grep command will not only look for "an" but also words like "Canadian", "Indian", and "antibody", etc because these words contain the substring "an". The command-line option -w can solve this problem because it only matches the string as a whole word.
+
+Example 1:
+I want to know how many lines in ch14.txt contain the word "an".
 ```
 bash-3.2$ grep -w -c "an" */*/*/*/ch14.txt
 15
