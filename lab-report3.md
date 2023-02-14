@@ -4,6 +4,7 @@ I chose to do web search on the options on command grep.
 The syntax for grep command is grep <pattern/string> <file>, and this command displays all the lines that contain the given pattern or string.
 The command-line options I found were -c, 
 
+
 **grep -c**\
 grep -c command prints the count of lines that contains the string or pattern that match the given string or pattern.
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/\
@@ -25,4 +26,10 @@ bash-3.2$ grep -c "is" */*/*/*/ch14.txt
 58
 ```
 I used grep -c command and the "*/*/*/*/ch14.txt" is the pattern of the path of the file inside written_2. It returns 58, which means that "is" appears in 58 lines of the file.
+  
+
+** grep -l**
+This command-line option displays the name of the files that contains the given string when multiple files is provided while using grep command.
+Example 1:
+
 
