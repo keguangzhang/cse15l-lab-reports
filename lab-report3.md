@@ -2,7 +2,7 @@
 
 I chose to do web search on the options on command grep. 
 The syntax for grep command is grep <pattern/string> <file>, and this command displays all the lines that contain the given pattern or string.
-The command-line options I found were -c, -l,
+The command-line options I found were -c, -l, -w, and -R
 
 
 **grep -c**\
