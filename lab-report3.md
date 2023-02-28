@@ -107,4 +107,4 @@ written_2/travel_guides/berlitz1/WhatToJapan.txt:        each month) and at Kita
 ```
 The command takes in the given string and compares it to all the text of the files in written_2. It returns the name of the file and a part of the text that includes the string.
   
-**Citation:** All the information was found on this website (https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
+**Citation:** All the information was found on this website [Link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and [Link](https://linuxhint.com/use-grep-recursively/).
