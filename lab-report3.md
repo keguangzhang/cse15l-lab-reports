@@ -61,7 +61,7 @@ written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
 written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 ```
-I used `grep -l` and enter "Bahamas" as the string to look for, and \*/\*/\*/\* and \*/\*/\*/\*/\* are the pattern for all files in written_2. Since I gived all files in written_2, there are many subdirectories within written_2 that contains the files containing the string. The `grep -l` command displays the directories that contains the string first, and then it displays all the names of files that contain the string.
+I used `grep -l` and enter "Bahamas" as the string to look for, and \*/\*/\*/\* and \*/\*/\*/\*/\* are the pattern for all files in written_2. It displays all the names of files that contain the string. This command is important because it lists all the files that contains the string with paths in the directory so that these files can be easily located, and it allows the user to get a quick approximation of the number of files.
   
   
 **`grep -w`**\
