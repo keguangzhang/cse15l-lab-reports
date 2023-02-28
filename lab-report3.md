@@ -28,7 +28,7 @@ I used grep -c command and the "\*/\*/\*/\*/ch14.txt" is the pattern of the path
   
 
 **`grep -l`**\
-This command-line option displays the name of the files that contains the given string when multiple files is provided while using `grep` command.
+Compared to `grep`, which only displays the lines that contains the given string in files, `grep -l` displays the name of the files that contains the given string when multiple files is provided.
 
 Example 1:
 I want to find which files in berlitz2 contains the string "Beijing":
