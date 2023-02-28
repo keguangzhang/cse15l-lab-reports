@@ -5,12 +5,12 @@ The syntax for grep command is `grep <pattern/string> <file>`, and this command 
 The command-line options I found were -c, -l, -w, and -R.
 
 
-**grep -c**\
+**`grep -c`**\
 grep -c command prints the count of lines that contains the string or pattern that match the given string or pattern.
 
 Example 1:\
 I want to find the number of text file in written_2 which is inside the repository dosearch that I have cloned during the lab. 
-During the lab, I didn't not know how to use the -c option of grep, so I stored the result of grep command into a file and then did the wc command to display the number of lines containing ".txt". However, using grep -c command, I can bypass the steps mentioned above and directly get a single number representing the number of text files in the directory:
+During the lab, I didn't not know how to use the -c option of grep, so I stored the result of grep command into a file and then did the wc command to display the number of lines containing ".txt". However, using `grep -c` command, I can bypass the steps mentioned above and directly get a single number representing the number of text files in the directory:
 ```
 bash-3.2$ find written_2 > result.txt
 bash-3.2$ grep -c ".txt" result.txt
