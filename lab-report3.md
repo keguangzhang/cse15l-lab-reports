@@ -105,6 +105,6 @@ I want to find out which file in written_2 contains the string "Kitano Temmangu 
 bash-3.2$ grep -R "Kitano Temmangu shrine" written_2
 written_2/travel_guides/berlitz1/WhatToJapan.txt:        each month) and at Kitano Temmangu shrine (25th), but there are many
 ```
-The command takes in the given string and compares it to all the text of the files in written_2. It returns the name of the file and a part of the text that includes the string.
+The command takes in the given string and compares it to all the text of the files in written_2. It returns the name of the file and a part of the text that includes the string. Although both `grep` and `grep -R` displays the lines containing the string, `grep -R` is especially helpful when the user doesn't know which specific files contain the strin because this command only needs a directory and it will go through all files in the directory.
   
 **Citation:** All the information was found on these websites [Link1](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) [Link2](https://linuxhint.com/use-grep-recursively/).
