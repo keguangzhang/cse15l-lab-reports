@@ -19,7 +19,7 @@ bash-3.2$ grep -c ".txt" result.txt
 I first used find command to find all the files and directories inside written_2 and stored it in a file called result.txt. I then use `grep -c` to find the count of lines that contain ".txt" in result.txt, and this gives me 224 which is the number if text files.
   
 Example 2:\
-I want to find in how many lines the string "is" occurs in fiel ch14.txt:
+I want to find in how many lines the string "is" occurs in file ch14.txt:
 ```
 bash-3.2$ grep -c "is" */*/*/*/ch14.txt
 58
@@ -61,11 +61,11 @@ written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
 written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 ```
-I used grep -l and enter "Bahamas" as the string to look for, and */*/*/* and */*/*/*/* are the pattern for all files in written_2. It displays the directories that contains the string first, and then it displays all the names of files that contain the string.
+I used `grep -l` and enter "Bahamas" as the string to look for, and \*/\*/\*/\* and \*/\*/\*/\*/\* are the pattern for all files in written_2. It displays the directories that contains the string first, and then it displays all the names of files that contain the string.
   
   
-**grep -w**\
-The grep command takes in the string and looks for all words that are either the string itself or contain the given string as a substring. This can be a problem when we want to find a certain word. For example, if I want to look for the word "an", the grep command will not only look for "an" but also words like "Canadian", "Indian", and "antibody", etc because these words contain the substring "an". The command-line option -w can solve this problem because it only matches the string as a whole word.
+**`grep -w`**\
+The `grep` command takes in the string and looks for all words that are either the string itself or contain the given string as a substring. This can be a problem when we want to find a certain word. For example, if I want to look for the word "an", the grep command will not only look for "an" but also words like "Canadian", "Indian", and "antibody", etc because these words contain the substring "an". The command-line option `-w` can solve this problem because it only matches the string as a whole word.
 
 Example 1:
 I want to know how many lines in ch14.txt contain the word "an":
