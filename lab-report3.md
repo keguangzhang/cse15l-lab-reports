@@ -88,7 +88,7 @@ I used `grep -w` command, and it shows that the word "man" only appears in two s
   
   
 **`grep -R`**\
-This command search for a string recursively in a directory.
+This command search for a string in recursively in a directory, which means that the command looks for the string in all files inside the directory provided. Both `grep -R` and `grep -r` search for the string recursively, but they are slightly different. `-R` follows all symbolic links which is a file that points to another file, while `-r` does not follow symbolic link unless it is on the command line.
  
 Example 1:
 I want to find out which file contains the word "Lucayans" in written_2 directory:
