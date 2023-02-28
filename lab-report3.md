@@ -2,7 +2,7 @@
 
 I chose to do web search on the options on command grep. 
 The syntax for grep command is `grep <pattern/string> <file>`, and this command displays all the lines that contain the given pattern or string.
-The command-line options I found were -c, -l, -w, and -R.
+The command-line options I found were `-c`, `-l`, `-w`, and `-R`.
 
 
 **`grep -c`**\
@@ -16,7 +16,7 @@ bash-3.2$ find written_2 > result.txt
 bash-3.2$ grep -c ".txt" result.txt
 224
 ```
-I first used find command to find all the files and directories inside written_2 and stored it in a file called result.txt. I then use grep -c to find the count of lines that contain ".txt" in result.txt, and this gives me 224 which is the number if text files.
+I first used find command to find all the files and directories inside written_2 and stored it in a file called result.txt. I then use `grep -c` to find the count of lines that contain ".txt" in result.txt, and this gives me 224 which is the number if text files.
   
 Example 2:\
 I want to find in how many lines the string "is" occurs in fiel ch14.txt:
