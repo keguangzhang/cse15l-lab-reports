@@ -42,7 +42,7 @@ written_2/travel_guides/berlitz2/China-WhatToDo.txt
 written_2/travel_guides/berlitz2/China-WhereToGo.txt
 written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
 ```
-I used grep -l and entered "Beijing" as the string to look for. */*/berlitz2/* tells it to look for all the file inside berlitz2. This command displays the name of 7 files that contain the string "Beijing".
+I used `grep -l` and entered "Beijing" as the string to look for. \*/\*/berlitz2/\* tells it to look for all the file inside berlitz2. This command displays the name of 7 files that contain the string "Beijing".
   
 Example 2:
 I want to find the files in written_2 that contains the string "Bahamas":
