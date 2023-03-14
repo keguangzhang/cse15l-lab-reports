@@ -5,6 +5,7 @@ The syntax for find command is `find <directory to start the search from> <-opti
 
 
 
+
 **`find -empty`**\
 Syntax: `find <directory to start the search from> -empty`\
 This option takes in a directory and searches and returns all the empty folders and files under the given dierectory. Here is am example:
@@ -31,6 +32,7 @@ Keguangs-MacBook-Pro:docsearch amy$ find ./written_2 -empty
 ```
 
 I created an empty text file inside `written_2/non-fiction/OUP/Abernathy` called `emptyFile.txt`. When I do `find ./written_2 -empty` again, this time, it displays both `emptyFolder` and `emptyFile.txt` and their pathways in written_2.
+
 
 
 
