@@ -27,4 +27,4 @@ I typed `<up><up><up><enter>` to compile the files again because the compile com
 **Step 9: commit and push the resulting change to the Github account**\
 To commit the change, I typed `git commit Li<tab>.java -m "Edited"`. The <tab> autocompleted ListExamplesTests, and the `-m "Edited"` added "Edited" as the commit message. The full command was `git commit ListExamples.java -m "Edited"`.
 To push the change, I typed `git push origin`, and it shown this:
-![Image](step 9.png)
+![Image](step 9.png).
