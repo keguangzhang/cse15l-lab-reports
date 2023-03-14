@@ -21,8 +21,10 @@ I used `<up>` and `<down>` to move my cursor up and down when editing the code.
   
 **Step 8: Run the tests, demonstrating that they now succeed**\
 After finishing editing the code, in nano, I pressed `Ctrl-O <enter>` to save the edit and then `Ctrl-X` to exit nano. 
-I typed `<up><up><up><enter>` to compile the files again, and I then typed `<up><up><up><enter>` again to run the files. It shown that the code successfully passed the tests:
+I typed `<up><up><up><enter>` to compile the files again because the compile command was three up in the history, and I then typed `<up><up><up><enter>` again to run the files. It shown that the code successfully passed the tests:
 ![Image](step 8.png)
 
 **Step 9: commit and push the resulting change to the Github account**\
-
+To commit the change, I typed `git commit Li<tab>.java -m "Edited"`. The <tab> autocompleted ListExamplesTests, and the `-m "Edited"` added "Edited" as the commit message. The full command was git commit ListExamples.java -m "Edited".
+To push the change, I typed `git push origin`, and it shown this:
+![Image](step 9.png)
