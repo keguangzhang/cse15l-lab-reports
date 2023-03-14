@@ -9,15 +9,20 @@ For this step, since the command to log into the account was already in my histo
 I copied the SSH link from the my fork of the repository on Github. On the terminal, I typed `git clone <link>`. To paste the link, I did `Ctrl-V`. The repository was successfullly cloned to the ieng6 remote server. 
 
 **Step 6: run the tests, demonstrating that they fail**\
-![Image](step 6.png)
+![Image](step 66.png)
 I first typed `cd lab7` to change my directory into lib7 directory.\ 
 To compile ListExample.java and ListExampleTests.java files, I typed `Ctrl-R` to get access to my commmand history. I then typed `javac`, and I found the command for compiling, which was `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<enter>`, and the files was successfully compiled.\
 To run the files, I typed `Ctrl-R` to get access to my commmand history. I then typed `lib`, and I found the command for compiling, which was `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. I then pressed `<enter>`, and the files was successfully runned. It showed that one it failed on one test.
   
 **Step 7: Edit the code file to fix the failing test**\
+I typed `nano Li<tab>`, and it autocompleted `nano ListExamples`. I added `.java` to complete the command. This command took me into ListExmaples.java file where I changed the code for merge() method into:
+![Image](step 7.png)
+I used `<up>` and `<down>` to move my cursor up and down when editing the code. 
+  
+**Step 8: Run the tests, demonstrating that they now succeed**\
+After finishing editing the code, in nano, I pressed `Ctrl-O <enter>` to save the edit and then `Ctrl-X` to exit nano. 
+I typed `<up><up><up><enter>` to compile the files again, and I then typed `<up><up><up><enter>` again to run the files. It shown that the code successfully passed the tests:
+![Image](step 8.png)
 
-
-Edit the code file to fix the failing test
-Run the tests, demonstrating that they now succeed
-Commit and push the resulting change to your Github account (you can pick any commit message!)
+**Step 9: commit and push the resulting change to the Github account**\
 
